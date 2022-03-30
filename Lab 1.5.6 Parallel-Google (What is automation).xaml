@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Lab_1_5_6_Parallel_Google__What_is_automation_" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1772,2574.66666666667" sap2010:WorkflowViewState.IdRef="Lab_1_5_6_Parallel_Google__What_is_automation__1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Lab_1_5_6_Parallel_Google__What_is_automation_" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1772,2750.66666666667" sap2010:WorkflowViewState.IdRef="Lab_1_5_6_Parallel_Google__What_is_automation__1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="24">
       <x:String>System.Activities</x:String>
@@ -57,7 +57,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="This code performs the following activities in parallel:&#xA;1. Search UiPath website on Google, copy about UiPath from the search result.&#xA;2. Search &quot;What is automation&quot; on Google, copy the definition from the search result.&#xA;3. Search &quot;Automation is the future&quot; on Google, copy the first search result.&#xA;4. Finally, store all copied text in an MS Word file.&#xA;5. Save and close the MS Word file." DisplayName="This code is to understand the working of parallel activity" sap:VirtualizedContainerService.HintSize="1782,2470" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="This code performs the following activities in parallel:&#xA;1. Search UiPath website on Google, copy about UiPath from the search result.&#xA;2. Search &quot;What is automation&quot; on Google, copy the definition from the search result.&#xA;3. Search &quot;Automation is the future&quot; on Google, copy the first search result.&#xA;4. Finally, store all copied text in an MS Word file.&#xA;5. Save and close the MS Word file." DisplayName="This code is to understand the working of parallel activity" sap:VirtualizedContainerService.HintSize="1782,2646" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="text1" />
       <Variable x:TypeArguments="x:String" Name="text2" />
@@ -69,26 +69,27 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Parallel sap2010:Annotation.AnnotationText="This activity executes several sequences in parallel" DisplayName="Parallel" sap:VirtualizedContainerService.HintSize="1740,1256" sap2010:WorkflowViewState.IdRef="Parallel_1">
+    <ui:Comment sap:VirtualizedContainerService.HintSize="1740,94.6666666666667" sap2010:WorkflowViewState.IdRef="Comment_1" Text="Uncomment MsgBox cos of error&#xD;&#xA;Simmi advised sometime unable to run code cos of MsgBox" />
+    <Parallel sap2010:Annotation.AnnotationText="This activity executes several sequences in parallel" DisplayName="Parallel" sap:VirtualizedContainerService.HintSize="1740,1302.66666666667" sap2010:WorkflowViewState.IdRef="Parallel_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="This block of code Search UiPath website on Google, copy about UiPath from the search result" DisplayName="FirstSequence" sap:VirtualizedContainerService.HintSize="508.666666666667,1179.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_11">
+      <Sequence sap2010:Annotation.AnnotationText="This block of code Search UiPath website on Google, copy about UiPath from the search result" DisplayName="FirstSequence" sap:VirtualizedContainerService.HintSize="508.666666666667,1226" sap2010:WorkflowViewState.IdRef="Sequence_11">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="466.666666666667,670" sap2010:WorkflowViewState.IdRef="OpenBrowser_4" Url="www.google.com">
+        <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="466.666666666667,668.666666666667" sap2010:WorkflowViewState.IdRef="OpenBrowser_4" Url="www.google.com">
           <ui:OpenBrowser.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,567.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,566.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_10">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -106,7 +107,7 @@
                     </ui:Target>
                   </ui:TypeInto.Target>
                 </ui:TypeInto>
-                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'INPUT'" sap:VirtualizedContainerService.HintSize="334,155.333333333333" sap2010:WorkflowViewState.IdRef="SendHotkey_5" Key="enter" KeyModifiers="None" SpecialKey="True">
+                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'INPUT'" sap:VirtualizedContainerService.HintSize="334,154.666666666667" sap2010:WorkflowViewState.IdRef="SendHotkey_5" Key="enter" KeyModifiers="None" SpecialKey="True">
                   <ui:SendHotkey.Target>
                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="020d97e4-8ebc-4ff8-bcb1-2db95f798076" InformativeScreenshot="2dd1cc1b886ea39985f6a51b13567a2a" Selector="&lt;webctrl tag='INPUT' type='text' /&gt;">
                       <ui:Target.TimeoutMS>
@@ -137,34 +138,40 @@
             </ActivityAction>
           </ui:OpenBrowser.Body>
         </ui:OpenBrowser>
-        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="466.666666666667,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[text1]" />
-        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="466.666666666667,229.333333333333" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="466.666666666667,62" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[text1]" />
+        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="466.666666666667,273.333333333333" sap2010:WorkflowViewState.IdRef="CommentOut_6">
           <ui:CommentOut.Body>
-            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,150.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_15">
+            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,194.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_18">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box-1st Sequence" sap:VirtualizedContainerService.HintSize="334,58.6666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[text1]" />
+              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" sap2010:Annotation.AnnotationText="Uncomment cos of MsgBox caused the error as per Simmi advice" DisplayName="Message Box-1st Sequence" sap:VirtualizedContainerService.HintSize="334,102.666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[text1]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:MessageBox>
             </Sequence>
           </ui:CommentOut.Body>
         </ui:CommentOut>
       </Sequence>
-      <Sequence sap2010:Annotation.AnnotationText="This block of code Search UiPath website on Google, copy about UiPath from the search result" DisplayName="Second Sequence" sap:VirtualizedContainerService.HintSize="508.666666666667,1179.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_7">
+      <Sequence sap2010:Annotation.AnnotationText="This block of code Search UiPath website on Google, copy about UiPath from the search result" DisplayName="Second Sequence" sap:VirtualizedContainerService.HintSize="508.666666666667,1226" sap2010:WorkflowViewState.IdRef="Sequence_7">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" sap2010:Annotation.AnnotationText="Opens Google homepage" BrowserType="Chrome" DisplayName="Open Browser - 'Opens UiPath search result webpage' (9)" sap:VirtualizedContainerService.HintSize="466.666666666667,731.333333333333" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" Url="[“www.google.com”]">
+        <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" sap2010:Annotation.AnnotationText="Opens Google homepage" BrowserType="Chrome" DisplayName="Open Browser - 'Opens UiPath search result webpage' (9)" sap:VirtualizedContainerService.HintSize="466.666666666667,730" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" Url="[“www.google.com”]">
           <ui:OpenBrowser.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,598" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,597.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_6">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -187,7 +194,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:TypeInto>
-                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'INPUT'" sap:VirtualizedContainerService.HintSize="334,155.333333333333" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="enter" KeyModifiers="None" SpecialKey="True">
+                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'INPUT'" sap:VirtualizedContainerService.HintSize="334,154.666666666667" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="enter" KeyModifiers="None" SpecialKey="True">
                   <ui:SendHotkey.Target>
                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a083f8b0-e5ac-4919-937b-3cd233aae908" InformativeScreenshot="fef000edb9179733ad7a6c9903b362e1" Selector="&lt;webctrl tag='INPUT' type='text' /&gt;">
                       <ui:Target.TimeoutMS>
@@ -223,33 +230,39 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </ui:OpenBrowser>
-        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="466.666666666667,229.333333333333" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="466.666666666667,273.333333333333" sap2010:WorkflowViewState.IdRef="CommentOut_7">
           <ui:CommentOut.Body>
-            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,150.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_16">
+            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,194.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_19">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box-2nd Sequence" sap:VirtualizedContainerService.HintSize="334,58.6666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[text2]" />
+              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" sap2010:Annotation.AnnotationText="Uncomment cos of MsgBod caused the error as per Simmi Advice " DisplayName="Message Box-2nd Sequence" sap:VirtualizedContainerService.HintSize="334,102.666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[text2]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:MessageBox>
             </Sequence>
           </ui:CommentOut.Body>
         </ui:CommentOut>
       </Sequence>
-      <Sequence sap2010:Annotation.AnnotationText="This block of code Search UiPath website on Google, copy about UiPath from the search result" DisplayName="Third Sequence" sap:VirtualizedContainerService.HintSize="508.666666666667,1179.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_9">
+      <Sequence sap2010:Annotation.AnnotationText="This block of code Search UiPath website on Google, copy about UiPath from the search result" DisplayName="Third Sequence" sap:VirtualizedContainerService.HintSize="508.666666666667,1226" sap2010:WorkflowViewState.IdRef="Sequence_9">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" sap2010:Annotation.AnnotationText="Opens Google homepage" BrowserType="Chrome" DisplayName="Open Browser - 'Opens UiPath search result webpage' (9)" sap:VirtualizedContainerService.HintSize="466.666666666667,762" sap2010:WorkflowViewState.IdRef="OpenBrowser_3" Url="[“www.google.com”]">
+        <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" sap2010:Annotation.AnnotationText="Opens Google homepage" BrowserType="Chrome" DisplayName="Open Browser - 'Opens UiPath search result webpage' (9)" sap:VirtualizedContainerService.HintSize="466.666666666667,760.666666666667" sap2010:WorkflowViewState.IdRef="OpenBrowser_3" Url="[“www.google.com”]">
           <ui:OpenBrowser.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,628.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,628" sap2010:WorkflowViewState.IdRef="Sequence_8">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -272,7 +285,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:TypeInto>
-                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'INPUT'" sap:VirtualizedContainerService.HintSize="334,155.333333333333" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="enter" KeyModifiers="None" SpecialKey="True">
+                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'INPUT'" sap:VirtualizedContainerService.HintSize="334,154.666666666667" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="enter" KeyModifiers="None" SpecialKey="True">
                   <ui:SendHotkey.Target>
                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0037dfab-647f-4df4-8517-7ab9cec9f959" InformativeScreenshot="f4842bb0b172389e31c6cb410cd59ccb" Selector="&lt;webctrl tag='INPUT' type='text' /&gt;">
                       <ui:Target.TimeoutMS>
@@ -313,27 +326,33 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </ui:OpenBrowser>
-        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="466.666666666667,229.333333333333" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="466.666666666667,289.333333333333" sap2010:WorkflowViewState.IdRef="CommentOut_5">
           <ui:CommentOut.Body>
-            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,150.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_17">
+            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,210.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_17">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box-Third Sequence" sap:VirtualizedContainerService.HintSize="334,58.6666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[text3]" />
+              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" sap2010:Annotation.AnnotationText="Properties&#xA;&#xA;Activate=True (To bring Windown to foreground)" DisplayName="Message Box-Third Sequence" sap:VirtualizedContainerService.HintSize="334,118.666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[text3]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:MessageBox>
             </Sequence>
           </ui:CommentOut.Body>
         </ui:CommentOut>
       </Sequence>
     </Parallel>
-    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" sap2010:Annotation.AnnotationText="“Attach MS Word window”" DisplayName="Attach Window-attach MS Word  (48)" sap:VirtualizedContainerService.HintSize="1740,970" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="f5a3d1acf337695d83d269615d0cb2c3" Selector="&lt;wnd app='winword.exe' cls='OpusApp' title='Document* - Word' /&gt;">
+    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" sap2010:Annotation.AnnotationText="“Attach MS Word window”" DisplayName="Attach Window-attach MS Word  (48)" sap:VirtualizedContainerService.HintSize="1740,968.666666666667" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="f5a3d1acf337695d83d269615d0cb2c3" Selector="&lt;wnd app='winword.exe' cls='OpusApp' title='Document* - Word' /&gt;">
       <ui:WindowScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,793.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_12">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,792" sap2010:WorkflowViewState.IdRef="Sequence_12">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -351,7 +370,7 @@
                 </ui:Target>
               </ui:TypeInto.Target>
             </ui:TypeInto>
-            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'edit  Page 1 content'" sap:VirtualizedContainerService.HintSize="334,155.333333333333" sap2010:WorkflowViewState.IdRef="SendHotkey_6" Key="f12" KeyModifiers="None" SpecialKey="True">
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'edit  Page 1 content'" sap:VirtualizedContainerService.HintSize="334,154.666666666667" sap2010:WorkflowViewState.IdRef="SendHotkey_6" Key="f12" KeyModifiers="None" SpecialKey="True">
               <ui:SendHotkey.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="07b00893-cbbd-4530-9100-42c172a99033" InformativeScreenshot="82a1778ee18b85a1499cccc4de6ec5a6" Selector="&lt;wnd app='winword.exe' cls='OpusApp' title='Document* - Word' /&gt;&lt;uia automationid='Body' name='Page 1 content' role='edit' /&gt;">
                   <ui:Target.TimeoutMS>
@@ -390,7 +409,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:Click>
-            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey-To close the application " sap:VirtualizedContainerService.HintSize="334,155.333333333333" sap2010:WorkflowViewState.IdRef="SendHotkey_7" Key="f4" KeyModifiers="Alt" SpecialKey="True">
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey-To close the application " sap:VirtualizedContainerService.HintSize="334,154.666666666667" sap2010:WorkflowViewState.IdRef="SendHotkey_7" Key="f4" KeyModifiers="Alt" SpecialKey="True">
               <ui:SendHotkey.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5f5ad0dd-25c6-4b32-a81c-4fcbf1de9c81" InformativeScreenshot="49ef638944552275fffb00c453fd3d29" Selector="&lt;wnd app='winword.exe' cls='OpusApp' title='Document1 - Word' /&gt;&lt;uia automationid='Body' name='Page 1 content' role='edit' /&gt;">
                   <ui:Target.TimeoutMS>
